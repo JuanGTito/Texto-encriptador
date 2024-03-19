@@ -1,0 +1,170 @@
+body{
+    width: 100%;
+    font-family: "Anta", sans-serif;
+    background-image: url("/img/fondoback.png");
+}
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1% 0 0.5% 0;
+    color: rgb(255, 215, 0);
+}
+.caja-encriptar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.encriptar{
+    padding: 3% 3% 2% 0;
+}
+.text-encriptar{
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: "Anta", sans-serif;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    opacity: 0.95;
+}
+.text-encriptar::placeholder{
+    color: white;
+}
+.indicacion{
+    margin-top: 13px;
+    font-size: 13px;
+    font-family: "Anta", sans-serif;
+    color: white;
+}
+.botones{
+    text-align: center;
+    width: 100%;
+}
+.boton-text{
+    margin: 15px 4px;
+    font-size: 20px;
+    width: 30%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-family: "Anta", sans-serif;
+    background-color: rgb(192, 192, 192);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.boton-text:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: rgb(243, 207, 2);
+    transition: 400ms;
+}
+.mostrar-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(83, 83, 83);
+    border: 2px solid white;
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 38px 0 0 0;
+    text-align: center;
+    opacity: 0.95;
+}
+.mostrar-img img{
+    width: 80%;
+    margin: 70px 0 0 0;
+}
+#pika-2{
+    display: none;
+}
+.mostrar-sub{
+    padding: 3%;
+    color: white;
+}
+.mostrar-par{
+    color: white; 
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid white;
+}
+.autor{
+    padding: 15px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.contacto{
+    display: flex;
+    margin: 25px;
+}
+ul .icon a{
+    margin: 10px;
+    padding: 5px 5px;
+    font-size: 30px;
+    color: white;
+}
+.icon:hover{
+    transform: scale(1.2);
+    transition: 15ms;
+}
+
+@media screen and (max-width: 920px){
+    .text-encriptar{
+        width: 300px;
+        height: 400px;
+    }
+    .mostrar-img{     
+        width: 200px;
+        height: 400px;
+        margin-top: 25px;
+    }
+    .boton-text{
+        margin: 15px 2px;
+        font-size: 12px;
+        width: 31%;
+        padding: 5px;
+    }
+    .mostrar-sub, .mostrar-par{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 520px){
+    .titulo{
+        margin: 10px;
+    }
+    .encriptar{
+        padding: 3% 0;
+    }
+    .caja-encriptar{
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-encriptar{
+        width: 90%;
+        height: 200px;
+        margin: 2px;
+    }
+    .mostrar-img{     
+        width: 70%;
+        height: 200px;
+        margin: 0 0;
+    }
+    .mostrar-img img{
+        width: 50%;
+        margin: 2px 0 0 0;
+    }
+    .boton-text{
+        font-size: 10px;
+    }
+    .mostrar-sub, .mostrar-par{
+        font-size: 10px;
+    }
+}

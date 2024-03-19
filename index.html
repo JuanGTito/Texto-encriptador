@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Enigma</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6482421e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Codigo Enigma</h1>
+    </header>
+    <main class="caja-encriptar">
+        <section class="encriptar">
+
+            <textarea id="mostext" class="text-encriptar" type="text" onclick="this.value=''" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
+            <p class="indicacion">&#9432 Solo letras minusculas y sin acento</p>
+
+            <section class="botones">
+                <button onclick="encriptar()" class="boton-text">Encriptar</button>
+                <button onclick="descencriptar()" class="boton-text">Descencriptar</button>
+                <button onclick="clipboard()" id="copiar" class="boton-text">Copiar</button>
+            </section>
+        </section>
+
+        <section class="mostrar-img">
+
+            <img id="pika" src="img/pikachu-intro.png" alt="" >
+            <img id="pika-2" src="img/pikachu-feliz.png" alt="">
+            <img id="pika-3" src="img/pikachu-contento.png" alt="">
+            <h2 class="mostrar-sub">Ningun mensaje fue encontrado</h2>
+            <p class="mostrar-par">Ingrese el texto que desees encriptar o descencriptar</p>
+        </section>
+
+    </main>
+    <footer>
+        <h1 class="autor">Juan Tito</h1>
+        <ul class="contacto">
+            <li class="icon"><a href="https://www.facebook.com/jhong.tmoya/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="icon"><a href="https://www.linkedin.com/in/juan-gedeon-tito-moya-b68728291/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="icon"><a href="https://github.com/JuanGTito"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
