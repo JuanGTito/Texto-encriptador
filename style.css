@@ -1,7 +1,7 @@
 body{
     width: 100%;
     font-family: "Anta", sans-serif;
-    background-image: url("/img/fondoback.png");
+    background-image: url("../img/fondoback.png");
 }
 .titulo{
     font-size: 40px;
